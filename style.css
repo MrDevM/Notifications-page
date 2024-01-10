@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+body {
+  min-height: 100dvh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-light-grayish-blue);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+main {
+  padding: 1rem 2rem 0;
+  background-color: var(--white);
+  max-width: 45rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 35px var(--light-grayish-blue-1);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  margin-top: 1.3rem;
+}
+header strong {
+  font-size: 1.5rem;
+}
+span,
+strong {
+  cursor: pointer;
+}
+span.no-notif {
+  margin-left: 10px;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  padding: 3px 9px;
+  background-color: var(--blue);
+  border-radius: 5px;
+  display: inline-block;
+  color: var(--white);
+}
+span.read {
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+.read:hover,
+strong:hover {
+  color: var(--blue);
+}
+li {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 7px;
+}
+.new {
+  background-color: var(--very-light-grayish-blue);
+  cursor: pointer;
+}
+li > img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+li > div {
+  margin-left: 1rem;
+}
+div.pic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+div.mess {
+  width: 100%;
+}
+p {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+small {
+  display: block;
+  color: var(--grayish-blue);
+  margin-top: 3px;
+  font-size: 15px;
+}
+p .react {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+}
+p .group {
+  color: var(--blue);
+  font-weight: 800;
+}
+p span:hover {
+  color: var(--blue);
+}
+p strong {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  font-size: 1rem;
+}
+img {
+  cursor: pointer;
+}
+i {
+  background-color: var(--red);
+  display: inline-block;
+  height: 0.45rem;
+  width: 0.45rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+.message {
+  padding: 0.9rem 0.95rem;
+  margin-top: 0.7rem;
+  border: 0.6px solid var(--light-grayish-blue-2);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.message:hover {
+  background-color: var(--light-grayish-blue-2);
+}
+.picture img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+@media screen and (max-width: 500px) {
+  header strong {
+    font-size: 1.2rem;
+  }
+  span.no-notif {
+    font-size: 0.9rem;
+  }
+  span.read {
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  small {
+    font-size: 10px;
+  }
+  p strong {
+    font-size: 0.7rem;
+  }
+}
